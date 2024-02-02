@@ -1,6 +1,8 @@
 const router = require ("express").Router();
 let Student = require("../models/student");
 
+http://localhost:8070/student/add
+
 router.route("/add").post((req,res)=>{
     const name = req.body.name;
     const age = Number(req.body.age);
@@ -20,6 +22,8 @@ router.route("/add").post((req,res)=>{
     }) 
 })
 
+http://localhost:8070/student
+
 router.route("/").get((req,res)=>{
 
     Student.find().then((students)=>{
@@ -29,6 +33,8 @@ router.route("/").get((req,res)=>{
     })
 
 })
+
+http://localhost:8070/student/update/
 
 router.route("/update/:id").put(async (req,res) =>{
     let userId = req.params.id;
