@@ -33,5 +33,5 @@ http://localhost:8070/student
 app.use("/student", studentRouter);
 
 app.listen(PORT, () => {
-    console.log('server is up and running on port number: ${PORT}')
+    console.log(`server is up and running on port number: ${PORT}`)
 })
