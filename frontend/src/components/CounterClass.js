@@ -19,8 +19,10 @@ class CounterClass extends React.Component{
     render(){
         return(
             <div>
+                <h3>Counter Class</h3>
                 <h1>Counter = {this.state.number}</h1>
                 <button onClick={this.increment}>Increment</button>
+                <hr></hr>
             </div>
         )
     }
